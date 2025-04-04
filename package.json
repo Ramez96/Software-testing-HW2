@@ -1,0 +1,12 @@
+{
+  "name": "softtesting",
+  "version": "1.0.0",
+  "main": "Calc.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
