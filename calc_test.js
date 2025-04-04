@@ -52,6 +52,14 @@ describe('Calc', () => {
         const result = Calc.divide(6, 3);
         assert.strictEqual(result, 2);
     });
+    it('should divide integer and floating point numbers', () => {
+        const result = Calc.divide(5, 2.3);
+        const expected = 5 / 2.3;
+        const delta = 0.000001;
+
+        assert.ok(Math.abs(result - expected) < delta);
+    });
+
     it('should divide negative numbers', () => {
         const result = Calc.divide(-6, -3);
         assert.strictEqual(result, 2);
